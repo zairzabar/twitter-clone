@@ -90,3 +90,11 @@ a, a:hover, a:active, a:visited {
 .search-gear {
     margin: 0 2rem;
 }
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+

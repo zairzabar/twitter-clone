@@ -5,17 +5,18 @@
 }
 
 :root {
-    --color-white: #fff;
-    --secondary-color: #222;
-    --text-color-white: #fff;
-    --color-black: #000;
-    --text-color-black: #000
+    --twitter-blue: rgb(29, 161, 242);
+    --twitter-black: rgb(20, 23, 26);
+    --dark-gray: rgb(101, 119, 134);
+    --light-gray: rgb(170, 184, 194);
+    --extra-light-gray: rgb(225, 232, 237);
+    --black: #000;
+    --white: #fff;
 }
 
-body {
-    height: 100vh;
-    background: var(--color-black);
-    color: var(--color-white);
+/* Utility */
+.my-border {
+    border: 1px rgb(101, 119, 134) solid;
 }
 
 .center {
@@ -24,36 +25,68 @@ body {
     justify-content: center;
 }
 
-.icon {
-    font-size: 1.8rem;
-    padding: 0 rem;
-    margin: 0.7rem;
-    border-radius: 50px;
-    color: var(--color-white);
+/* Page */
+body {
+    height: 100vh;
+    background: var(--black);
+    color: var(--white);
 }
 
-.container-left {
-    padding-left: 60px;
+.row {
+    height: 100vh;
+    padding-left: 100px ;
+}
+
+/* Left section Components */
+.links  {
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    flex-direction: column;
+}
+
+.icon {
+    font-size: 1.8rem;
+    padding: 5px 12px;
+    margin: 0.7rem;
+    border-radius: 50px;
+    color: var(--white);
+    display: inline-block;
 }
 
 .icon-text {
     font-size: 1.4rem;
-    margin-right: 1rem;
-    color: var(--color-white);
+    color: var(--white);
 }
 
 .icon:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--twitter-black);
 }
 
 a, a:hover, a:active, a:visited {
     text-decoration: none;
 }
 
-.row {
-    height: 100vh;
+/* Middle section components */
+.middle-section {
+    padding-top: 1rem;
 }
 
-.border {
-    border: 1px solid lightgray;
+.search-section {
+    background: var(--twitter-black);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.search-bar {
+    border: none;
+    background: inherit;
+}
+
+.search-bar:hover, .search-bar:active, .search-bar:focus {
+    border: none;
+}
+
+.search-gear {
+    margin: 0 2rem;
 }
